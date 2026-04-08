@@ -16,7 +16,10 @@ from pathlib import Path
 
 import psycopg2
 import requests
+from dotenv import load_dotenv
 from groq import Groq
+
+load_dotenv()
 from psycopg2.extras import execute_values
 from requests.exceptions import JSONDecodeError as RequestsJSONDecodeError
 
